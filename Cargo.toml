@@ -1,0 +1,28 @@
+[package]
+name = "htmlify"
+authors = ["Jamie Rodriguez"]
+license = "BSD-3-Clause"
+description = "Converts source-code into semantically-labelled HTML"
+version = "0.1.0"
+edition = "2024"
+homepage = "https://github.com/Jamie-Rodriguez"
+repository = "https://github.com/Jamie-Rodriguez/htmlify"
+readme = "README.md"
+keywords = ["HTML", "parser", "lexer", "semantic"]
+categories = ["command-line-utilities", "parsing", "web-programming"]
+publish = false
+rust-version = "1.85.0"
+
+[dependencies]
+clap = { version = "4.5.32", features = ["derive"] }
+phf = { version = "0.11.3", features = ["macros"] }
+regex = "1.11.1"
+
+[dev-dependencies]
+proptest = "1.6.0"
+
+[profile.release]
+strip = true
+lto = true
+codegen-units = 1
+

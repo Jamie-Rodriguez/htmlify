@@ -1,0 +1,37 @@
+edition = "2024"
+
+# Stable
+array_width = 100
+fn_call_width = 80
+hex_literal_case = "Upper"
+short_array_element_width_threshold = 60
+single_line_if_else_max_width = 80
+single_line_let_else_max_width = 80
+struct_lit_width = 80
+use_field_init_shorthand = true
+use_small_heuristics = "Max"
+use_try_shorthand = true
+
+# Nightly
+binop_separator = "Front" # This doesn't seem to be respected?
+blank_lines_upper_bound = 2
+brace_style = "PreferSameLine"
+color = "Always"
+condense_wildcard_suffixes = true
+enum_discrim_align_threshold = 80
+fn_single_line = true
+indent_style = "Visual"
+inline_attribute_width = 80
+match_arm_blocks = false
+imports_granularity = "Module"
+normalize_comments = true
+reorder_impl_items = true
+reorder_imports = false
+group_imports = "StdExternalCrate"
+reorder_modules = false
+spaces_around_ranges = true
+struct_field_align_threshold = 60
+trailing_comma = "Never"
+unstable_features = true
+where_single_line = true
+wrap_comments = true
